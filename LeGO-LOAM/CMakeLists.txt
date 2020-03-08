@@ -7,6 +7,7 @@ find_package(catkin REQUIRED COMPONENTS
   tf
   roscpp
   rospy
+  rosbag
   cv_bridge
   image_transport
 
@@ -23,7 +24,7 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(GTSAM REQUIRED QUIET)
 find_package(PCL REQUIRED QUIET)
 find_package(OpenCV REQUIRED QUIET)
-
+find_package(Boost REQUIRED QUIET)
 catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS cloud_msgs
