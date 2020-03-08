@@ -28,16 +28,11 @@ catkin_make -j1
 
 ## Run the package
 
-1. Run the launch file:
+Run the launch file:
 ```
 roslaunch lego_loam run.launch
 ```
 Notes: The parameter "/use_sim_time" is set to "true" for simulation, "false" to real robot usage.
 
-2. Play existing bag files:
-```
-rosbag play *.bag --clock --topic /velodyne_points /imu/data
-
-such as 
-rosbag play 2018-05-18-15-25-12_36.bag  --clock --topic /velodyne_points /imu/data
+The source of bag was included in LeGo.cpp. Please pay attentaion to the path of it.
 ```
